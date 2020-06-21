@@ -44,13 +44,13 @@ mvn clean install
 ```
 # How to Test
 Run the server and the client both on eclipse.
-## 1. Run a server
+## 1. Run a Server
 1. In click serviceapl-server, right click com.example.grpc.serviceapl.ServiceAplServer.java and select Run as > Java application.
-## 2. Run a client
+## 2. Run a Client
 1. In click serviceapl-client, right click com.example.grpc.tester.ServiceAplLauncher.java and select Run as > Java application.
 
 
-# How to Add a new proto buf message
+# How to Add a New Protobuf Class
 1. Create a proto file and build (mvn clean install). And new files are created.
 1. Copy the 2 created file under com.example.grpc.protoclass in serviceapl-server.
 1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
