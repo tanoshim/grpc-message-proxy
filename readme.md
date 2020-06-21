@@ -34,21 +34,21 @@ Run the server and the client both on eclipse.
 
 # Class Descriptions
 ## serviceapl-client
-##### Class MyStreamObserverFacade
+### Class MyStreamObserverFacade
 gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
-##### Class ServiceAplClient
+### Class ServiceAplClient
 Message sender client.
-##### Class AaaMessageHandler
+### Class AaaMessageHandler
 gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
 
 ## serviceapl-server
-##### Class ServiceAplServer
+#### Class ServiceAplServer
 Server 
-##### Class ServiceAaaImpl
-##### Class AaaMessageHandler
+#### Class ServiceAaaImpl
+#### Class AaaMessageHandler
 gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
-##### Class AaaServiceGrpc
+#### Class AaaServiceGrpc
 gRPC auto-generated class
-##### Class Aaa
+#### Class Aaa
 gRPC auto-generated class
 
