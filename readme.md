@@ -23,20 +23,24 @@ public final class MyStreamObserverFacade<V> extends StreamObserverFacade<V> {
 
 # Class Descriptions
 ## serviceapl-client
-### Class MyStreamObserverFacade
+#### Class MyStreamObserverFacade
 gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
-### Class ServiceAplClient
+#### Class ServiceAplClient
 Message sender client.
-### Class AaaMessageHandler
+#### Class AaaMessageHandler
 gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
 
 ## serviceapl-server
-### Class ServiceAaaImpl
-### Class ServiceAplServer
-### Class AaaMessageHandler
+#### Class ServiceAplServer
+Server 
+#### Class ServiceAaaImpl
+
+#### Class AaaMessageHandler
 gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
-### Class ToraServiceGrpc
-### Class Tora
+#### Class AaaServiceGrpc
+gRPC auto-generated class
+#### Class Aaa
+gRPC auto-generated class
 
 # How to Build
 ```
@@ -46,6 +50,7 @@ mvn clean install
 Run the server and the client both on eclipse.
 ## 1. Run a Server
 1. In click serviceapl-server, right click com.example.grpc.serviceapl.ServiceAplServer.java and select Run as > Java application.
+* The server stops after 60 seconds
 ## 2. Run a Client
 1. In click serviceapl-client, right click com.example.grpc.tester.ServiceAplLauncher.java and select Run as > Java application.
 
