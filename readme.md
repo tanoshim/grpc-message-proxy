@@ -3,23 +3,8 @@
 ## 1. Capture all the outgoing gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20out.png)
 
-### sample code
-```
-MessageSender.send(serviceApl, AAA.A001.newBuilder().setMsg("hello").build());
-
-```
 ## 2. Capture all the incomming gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20in.png)
-### sample code
-```
-public final class MyStreamObserverFacade<V> extends StreamObserverFacade<V> {
-	protected MessageHandler<V> callback;
-	@Override
-	public void onNext(V arg) {
-		callback.onNext(arg);		
-	}
-}
-```
 
 # Class Descriptions
 ## serviceapl-client
@@ -49,14 +34,14 @@ mvn clean install
 Run the server and the client both on eclipse.
 ## 1. Run a Server
 1. In click serviceapl-server, right click com.example.grpc.serviceapl.ServiceAplServer.java and select Run as > Java application.
-* The server stops after 60 seconds
+*The server stops after 60 seconds
 ## 2. Run a Client
 1. In click serviceapl-client, right click com.example.grpc.tester.ServiceAplLauncher.java and select Run as > Java application.
 
 
 # How to Add a New Protobuf Class
-1. Create a proto file and build (mvn clean install). And new files are created.
-1. Copy the 2 created file under com.example.grpc.protoclass in serviceapl-server.
+1. Create a proto file in serviceapl-server\src\main\proto and build (mvn clean install). And new two files are created under target.
+1. Copy the two created file under com.example.grpc.protoclass in serviceapl-server.
 1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
 1. Create a message handler for a new class in serviceapl-server.
 1. Create a message handler for a new class in serviceapl-client.
