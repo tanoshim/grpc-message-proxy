@@ -8,26 +8,6 @@
 
 *Only available for Client Streaming and Bidirectional streaming RPC
 
-# Class Descriptions
-## serviceapl-client
-#### Class MyStreamObserverFacade
-gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
-#### Class ServiceAplClient
-Message sender client.
-#### Class AaaMessageHandler
-gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
-
-## serviceapl-server
-#### Class ServiceAplServer
-Server 
-#### Class ServiceAaaImpl
-#### Class AaaMessageHandler
-gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
-#### Class AaaServiceGrpc
-gRPC auto-generated class
-#### Class Aaa
-gRPC auto-generated class
-
 # How to Build
 ```
 mvn clean install
@@ -51,4 +31,24 @@ Run the server and the client both on eclipse.
 1. Register a new stub in MessageSender in ServiceAplClient.
 1. Add a message to send in the handle method in ServiceAplClient.
 
+
+# Class Descriptions
+## serviceapl-client
+##### Class MyStreamObserverFacade
+gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
+##### Class ServiceAplClient
+Message sender client.
+##### Class AaaMessageHandler
+gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
+
+## serviceapl-server
+##### Class ServiceAplServer
+Server 
+##### Class ServiceAaaImpl
+##### Class AaaMessageHandler
+gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
+##### Class AaaServiceGrpc
+gRPC auto-generated class
+##### Class Aaa
+gRPC auto-generated class
 
