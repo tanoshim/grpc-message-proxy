@@ -1,7 +1,7 @@
 # Features
 
 ## 1. Capture all the outgoing gRPC messages with a single class
-![alt](https://github.com/tanoshim/len3/blob/master/pic/grpc-facade%20-%20out.png)
+![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20out.png)
 
 ### sample code
 ```
@@ -9,7 +9,7 @@ MessageSender.send(serviceApl, AAA.A001.newBuilder().setMsg("hello").build());
 
 ```
 ## 2. Capture all the incomming gRPC messages with a single class
-![alt](https://github.com/tanoshim/len3/blob/master/pic/grpc-facade%20-%20in.png)
+![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20in.png)
 ### sample code
 ```
 public final class MyStreamObserverFacade<V> extends StreamObserverFacade<V> {
