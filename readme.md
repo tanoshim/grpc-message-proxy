@@ -23,24 +23,16 @@ public final class MyStreamObserverFacade<V> extends StreamObserverFacade<V> {
 
 # Class Descriptions
 ## serviceapl-client
-#### Class MyStreamObserverFacade
-gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
-#### Class ServiceAplClient
-Message sender client.
-#### Class AaaMessageHandler
-gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
+#### Class MyStreamObserverFacade:gRPC message receiver. A concrete class of StreamObserverFacade which receives all the in-comming message from the server.
+#### Class ServiceAplClient:Message sender client.
+#### Class AaaMessageHandler:gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
 
 ## serviceapl-server
-#### Class ServiceAplServer
-Server 
-#### Class ServiceAaaImpl
-
-#### Class AaaMessageHandler
-gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
-#### Class AaaServiceGrpc
-gRPC auto-generated class
-#### Class Aaa
-gRPC auto-generated class
+#### Class ServiceAplServer:Server 
+#### Class ServiceAaaImpl:
+#### Class AaaMessageHandler:gRPC concrete message handler. Each message handler corresponds to a protobuf data. 
+#### Class AaaServiceGrpc:gRPC auto-generated class
+#### Class Aaa: gRPC auto-generated class
 
 # How to Build
 ```
