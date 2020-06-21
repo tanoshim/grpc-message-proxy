@@ -12,6 +12,14 @@
 ```
 mvn clean install
 ```
+# How to Import Projects Into Eclipse
+1. Type the following command in the Windows command prompt.
+```
+mvn eclipse:eclipse
+```
+2. Start eclipse and import projects.
+
+
 # How to Test
 Run the server and the client both on eclipse.
 ## 1. Run a Server
