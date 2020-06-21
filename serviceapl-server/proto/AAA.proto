@@ -1,0 +1,19 @@
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+package com.example.grpc.aaa;
+
+message A001 {
+    string msg = 1;
+    int32 servermessage = 2;
+}
+
+message A001Response {
+    google.protobuf.Timestamp timestamp = 1;
+    A001 message = 2;
+}
+
+service aaa {
+    rpc serviceApl(stream  A001) returns (stream  A001Response);
+}

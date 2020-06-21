@@ -1,0 +1,22 @@
+
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+package com.example.grpc.protoclass;
+
+message Req {
+    string msg1 = 1;
+    string msg2 = 2;
+    string msg3 = 3;
+    int32 type= 4;
+}
+
+message Res {
+    google.protobuf.Timestamp timestamp = 1;
+    int32 stat = 2;
+    Req message = 3;
+}
+
+service ToraService {
+    rpc sendMessageA(stream  Req) returns (stream  Res);
+}
