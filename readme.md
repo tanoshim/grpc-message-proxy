@@ -42,3 +42,7 @@ Run the server and the client both on eclipse.
 1. Add a message to send in ServiceAplClient Class.
 	1. MessageSender.send(XXX.XX.newBuilder().setMsg("hello").build())
 
+# Potential Enhancement
+- Auto-code-generation.
+In order to omit sevral steps in "How to Add a New Protobuf Class"
+- Multithreading/Thread safe
