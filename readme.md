@@ -35,10 +35,10 @@ Run the server and the client both on eclipse.
 1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
 1. Create a message handler for a new class in serviceapl-server.
 1. Create a message handler for a new class in serviceapl-client.
-1. Add a new service(ServiceXxxImpl) to the server object in ServiceAplServer Class.
+1. Add a new service(ServiceXxxImpl) in ServiceAplServer Class.
 	1. NettyServerBuilder.addService(new ServiceXxxImpl())
-1. Register a new stub to MessageSender in ServiceAplClient Class.
+1. Register a new stub in ServiceAplClient Class.
 	1. MessageSender.register(XxxServiceGrpc.newStub(channel), ...);
-1. Add a message to send in the handle method in ServiceAplClient Class.
+1. Add a message to send in ServiceAplClient Class.
 	1. MessageSender.send(XXX.XX.newBuilder().setMsg("hello").build())
 
