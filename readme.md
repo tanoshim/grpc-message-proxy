@@ -3,10 +3,10 @@
 - Easy to manage many protobuf classes with a simple structure.
 
 # Features
-## 1. Capture all the outgoing gRPC messages with a single class
+## 1. Capturing all the outgoing gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20out.png)
 
-## 2. Capture all the incomming gRPC messages with a single class
+## 2. Capturing all the incomming gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20in.png)
 
 *Only available for Client-Streaming and Bidirectional-Streaming RPC
