@@ -8,7 +8,7 @@
 ## 2. Capture all the incomming gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20in.png)
 
-*Only available for Client Streaming and Bidirectional streaming RPC
+*Only available for Client-Streaming and Bidirectional-Streaming RPC
 
 # How to Build
 ```
