@@ -13,7 +13,7 @@
 mvn clean install
 ```
 # How to Import Projects Into Eclipse
-1. Type the following command in the Windows command prompt.
+1. Run the following command with the Windows command prompt in the root of the project directory.
 ```
 mvn eclipse:eclipse
 ```
