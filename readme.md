@@ -1,5 +1,7 @@
-# Features
+# Goal
+- Controll all the incomming and outgoing gRPC messages in one place with a simple structure
 
+# Features
 ## 1. Capture all the outgoing gRPC messages with a single class
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20out.png)
 
