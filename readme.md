@@ -24,7 +24,7 @@ mvn eclipse:eclipse
 Run the server and the client both on eclipse.
 ## 1. Run a Server
 1. In serviceapl-server, right click com.example.grpc.serviceapl.ServiceAplServer.java and select Run as > Java application.
-*The server stops after 60 seconds
+*The server stops after 60 seconds automatically.
 ## 2. Run a Client
 1. In serviceapl-client, right click com.example.grpc.tester.ServiceAplLauncher.java and select Run as > Java application.
 
