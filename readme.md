@@ -36,9 +36,12 @@ Run the server and the client both on eclipse.
 1. Create a message handler for a new class in serviceapl-server.
 1. Create a message handler for a new class in serviceapl-client.
 1. Add a new service(ServiceXxxImpl) to the server object in ServiceAplServer Class.
+
 NettyServerBuilder.addService(new ServiceXxxImpl())
 1. Register a new stub to MessageSender in ServiceAplClient Class.
+
 MessageSender.register(XxxServiceGrpc.newStub(channel), new StreamObserverFacadeImpl<Tora.Res>(new XxxMessageHandler()), "sendMessageA");
 1. Add a message to send in the handle method in ServiceAplClient Class.
+
 MessageSender.send(XXX.XX.newBuilder().setMsg("hello").build())
 
