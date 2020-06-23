@@ -44,5 +44,5 @@ Run the server and the client both on eclipse.
 
 # Potential Enhancement
 - Auto-code-generation.
-In order to omit sevral steps in "How to Add a New Protobuf Class"
+In order to omit steps in "How to Add a New Protobuf Class"
 - Multithreading/Thread safe
