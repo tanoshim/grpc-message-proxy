@@ -1,6 +1,6 @@
 # Goal
-- Controll all the incomming and outgoing gRPC messages in one place (before sending/receiving).
-- Easy to manage many protobuf classes with a simple structure.
+## - Controll all the incomming and outgoing gRPC messages in one place (before sending/receiving messages).
+## - Easy to manage many protobuf classes with a simple structure.
 
 # Features
 ## 1. Capture all the outgoing gRPC messages with a single class
