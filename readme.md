@@ -33,8 +33,8 @@ Run the server and the client both on eclipse.
 1. Create a proto file in serviceapl-server\src\main\proto and build. And new two java files are created under the target directory.
 1. Copy the two created files to com.example.grpc.protoclass in serviceapl-server.
 1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
-1. Create a message handler for a new class in serviceapl-server.
-1. Create a message handler for a new class in serviceapl-client.
+1. Create a message handler for a new protobuf class in serviceapl-server.
+1. Create a message handler for a new protobuf class in serviceapl-client.
 1. Add a new service(ServiceXxxImpl) in ServiceAplServer Class.
 	1. NettyServerBuilder.addService(new ServiceXxxImpl())
 1. Register a new stub in ServiceAplClient Class.
