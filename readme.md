@@ -18,6 +18,18 @@ mvn eclipse:eclipse
 ```
 2. Start eclipse and import projects.
 
+# How to Add a New Protobuf Class
+1. Create a proto file in serviceapl-server\src\main\proto and build. And new two java files are created under the target directory.
+1. Copy the two created files to com.example.grpc.protoclass in serviceapl-server.
+1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
+1. Create a message handler for a new protobuf class in serviceapl-server.
+1. Create a message handler for a new protobuf class in serviceapl-client.
+1. Add a new service(ServiceXxxImpl) in ServiceAplServer Class.
+	1. NettyServerBuilder.addService(new ServiceXxxImpl())
+1. Register a new stub in ServiceAplClient Class.
+	1. MessageSender.register(XxxServiceGrpc.newStub(channel), ...);
+1. Add a message to send in ServiceAplClient Class.
+	1. MessageSender.send(XXX.XX.newBuilder().setMsg("hello").build())
 
 # How to Test
 Run the server and the client both on eclipse.
@@ -31,19 +43,6 @@ Run the server and the client both on eclipse.
 ```
 mvn clean install
 ```
-
-# How to Add a New Protobuf Class
-1. Create a proto file in serviceapl-server\src\main\proto and build. And new two java files are created under the target directory.
-1. Copy the two created files to com.example.grpc.protoclass in serviceapl-server.
-1. Create ServiceXxxImpl under com.example.grpc.impl in serviceapl-server.
-1. Create a message handler for a new protobuf class in serviceapl-server.
-1. Create a message handler for a new protobuf class in serviceapl-client.
-1. Add a new service(ServiceXxxImpl) in ServiceAplServer Class.
-	1. NettyServerBuilder.addService(new ServiceXxxImpl())
-1. Register a new stub in ServiceAplClient Class.
-	1. MessageSender.register(XxxServiceGrpc.newStub(channel), ...);
-1. Add a message to send in ServiceAplClient Class.
-	1. MessageSender.send(XXX.XX.newBuilder().setMsg("hello").build())
 
 # Potential Enhancement
 - Auto-code-generation.
