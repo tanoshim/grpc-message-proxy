@@ -11,10 +11,6 @@
 
 *Only available for Client-Streaming and Bidirectional-Streaming RPC
 
-# How to Build
-```
-mvn clean install
-```
 # How to Import Projects Into Eclipse
 1. Run the following command with the Windows command prompt in the root of the project directory.
 ```
@@ -31,6 +27,10 @@ Run the server and the client both on eclipse.
 ## 2. Run a Client
 1. In serviceapl-client, right click com.example.grpc.tester.ServiceAplLauncher.java and select Run as > Java application.
 
+# How to Build
+```
+mvn clean install
+```
 
 # How to Add a New Protobuf Class
 1. Create a proto file in serviceapl-server\src\main\proto and build. And new two java files are created under the target directory.
