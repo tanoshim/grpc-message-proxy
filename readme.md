@@ -1,5 +1,5 @@
 # Goal
-- Controll all the incomming and outgoing gRPC messages in one place (before sending/receiving messages).
+- Controll all the incomming and outgoing gRPC messages in one class (before sending/receiving messages).
 - Easy to manage many protobuf classes with a simple structure.
 
 # Features
