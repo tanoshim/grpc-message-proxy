@@ -1,6 +1,7 @@
 # Goal
 - Controll all the incoming and outgoing gRPC messages in one class (before sending/receiving messages) like a message gateway.
 - Easy to manage many protobuf classes with a simple structure.
+Warning:This is not a common way to capture all the incoming/outgoing messages. Use ServerInterceptor if you want to do the same thing in a standard way.
 
 # Features
 ## 1. Capturing all the outgoing gRPC messages with a single class
@@ -11,7 +12,6 @@
 
 *Only available for Client-Streaming and Bidirectional-Streaming RPC
 
-*This is not a common way to capture all the incoming/outgoing messages. use ServerInterceptor if you want to do the same thing.
 
 # How to Import Projects Into Eclipse
 1. Run the following command with the Windows command prompt in the root of the project directory.
