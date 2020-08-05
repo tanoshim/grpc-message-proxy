@@ -10,6 +10,7 @@
 ![alt](https://github.com/tanoshim/grpc-message-facade/blob/master/pic/grpc-message-facade%20-%20in.png)
 
 *Only available for Client-Streaming and Bidirectional-Streaming RPC
+
 *This is not a common way to capture all the incoming/outgoing messages. use ServerInterceptor if you want to do the same thing.
 
 # How to Import Projects Into Eclipse
