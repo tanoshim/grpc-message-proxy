@@ -1,6 +1,7 @@
 # Goal
 - Controll all the incoming and outgoing gRPC messages in one class (before sending/receiving messages) like a message gateway.
 - Easy to manage many protobuf classes with a simple structure.
+
 Warning:This is not a common way to capture all the incoming/outgoing messages. Use ServerInterceptor if you want to do the same thing in a standard way.
 
 # Features
