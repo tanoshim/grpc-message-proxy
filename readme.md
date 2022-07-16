@@ -1,4 +1,4 @@
-# Goal
+# Goal(dev)
 - Controll all the incoming and outgoing gRPC messages in one class (before sending/receiving messages) like a message gateway.
 - Easy to manage many protobuf classes with a simple structure.
 
